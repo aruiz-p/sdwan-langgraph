@@ -1,7 +1,7 @@
 ## SD-WAN AI Assistant with LangGraph
 The purpose of this project is to explore LangGraph multi agent workflows to enhance my [previously created](https://github.com/aruiz-p/sdwan-assistant) sd-wan assistant. 
 
-This repo was created along with the following <a href="https://netwithalex.blog/building-my-first-sd-wan-ai-assistant-with-langchain/"> blog post </a>
+This repo was created along with the following <a href="https://netwithalex.blog/improving-my-sd-wan-assistant-multiple-agents/"> blog post </a>
 
 ### Built With
 
