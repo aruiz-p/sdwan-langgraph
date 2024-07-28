@@ -1,9 +1,7 @@
 ## SD-WAN AI Assistant with LangGraph
-The purpose of this project is to build an assistant that can start a Cisco SD-WAN NWPI trace and give me details of the flows. 
+The purpose of this project is to explore LangGraph multi agent workflows to enhance my [previously created](https://github.com/aruiz-p/sdwan-assistant) sd-wan assistant. 
 
 This repo was created along with the following <a href="https://netwithalex.blog/building-my-first-sd-wan-ai-assistant-with-langchain/"> blog post </a>
-
-I used [CLEUR-DEVNET-3707](https://github.com/jillesca/CLEUR-DEVNET-3707) as a base for this project 
 
 ### Built With
 
@@ -21,7 +19,7 @@ The compponents used are:
 * OpenAI account. Agent doesn't consume much credits. For more info <https://openai.com/index/openai-api/>.
 * FastAPI to host the LLM 
 * [Webex_bot](https://github.com/fbradyirl/webex_bot) to chat with the LLM.
-
+* LangSmith. To create and account and get an API key go [here](https://docs.smith.langchain.com/how_to_guides/setup/create_account_api_key)
 
 Create an .env file with the following information
 
@@ -38,10 +36,14 @@ VMANAGE_USER="<YOUR_VMANAGE_USER>"
 VMANAGE_PASS="<YOUR_VMANAGE_PASS>"
 VMANAGE_IP="<YOUR_VMANAGE_IP>"
 VMANAGE_PORT="<YOUR_VMANAGE_PORT>"
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+LANGCHAIN_API_KEY="<API_KEY>"
+LANGCHAIN_PROJECT="<PROJECT_NAME>"
 ```
 
 ### Demo
-In this demo, the goal is to understand what is going on with an SD-WAN flow that is not working correctly. 
+In this demo, the goal is to understand how a multi-agent deployment works. 
 
 I have configured and ACL on the DC's WAN Edge to drop the packets, I want to see if I am able to detect this problem using the SD-WAN Assistant.
 
