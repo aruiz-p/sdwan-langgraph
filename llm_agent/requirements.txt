@@ -1,0 +1,7 @@
+fastapi
+langchain
+langchain_openai
+openai
+python-dotenv
+uvicorn
+webex_bot
