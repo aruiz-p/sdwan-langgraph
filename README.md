@@ -46,6 +46,7 @@ LANGCHAIN_PROJECT="<PROJECT_NAME>"
 In this demo, the goal is to understand how a multi-agent deployment works. 
 
 I have configured and ACL on the DC's WAN Edge to drop the packets, I want to see if I am able to detect this problem using the SD-WAN Assistant.
+![StartTrace](images/agent-resp.png)
 
 To get more details you can check this <a href="https://netwithalex.blog/improving-my-sd-wan-assistant-multiple-agents"> blog post </a>
 
